@@ -3,7 +3,7 @@ This plugin or code is created to avoid alpha keyboard and alphabets to write in
 ## Installation
 First add below jquery in your footer, so it will work on all fields
 ```jquery
-$(document).on("input", ".numericOnly", function() {
+$(document).on("input", "input[type='tel']", function() {
     this.value = this.value.replace(/\D/g,'');
 });
 
